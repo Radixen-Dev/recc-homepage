@@ -3,13 +3,6 @@ import { DISCORD_URL } from "../constants";
 import { CtaBanner } from "../components/CtaBanner";
 import { ArrowIcon } from "../components/icons";
 
-const BRIEFING_FACTS: { label: string; value: string }[] = [
-	{ label: "Setting", value: "Half-Life 2, under Combine control" },
-	{ label: "Structure", value: "Persistent, no rounds or matches" },
-	{ label: "Playable roles", value: "Civilian, CP, Overwatch, business owner" },
-	{ label: "History", value: "~10 years across community servers" },
-];
-
 const ROLES: { title: string; clearance: string; body: string }[] = [
 	{
 		title: "Civilian",
@@ -66,28 +59,16 @@ export function WhatIsCC() {
 					</p>
 				</div>
 
-				<div className="briefing__grid">
-					<p className="briefing__lead">
-						CombineControl (CC) is a Garry&rsquo;s Mod gamemode built on the Half-Life 2
-						universe. There&rsquo;s no single objective and no round timer, just a city under
-						Combine occupation and whatever role you decide to play in it. Most people play
-						civilians just trying to get by, though plenty sign up as Civil Protection or
-						Overwatch instead, enforcing the very occupation everyone else lives under. With
-						enough credits, you can also license a shop and build something of your own.
-						It&rsquo;s been running in different forms across community-hosted servers for
-						roughly a decade, and Re:CC is our attempt at doing it properly.
-					</p>
-
-					<div className="briefing__panel">
-						<div className="briefing__panel-head">At a glance</div>
-						{BRIEFING_FACTS.map((f) => (
-							<div className="briefing__row" key={f.label}>
-								<span className="briefing__row-label">{f.label}</span>
-								<span className="briefing__row-value">{f.value}</span>
-							</div>
-						))}
-					</div>
-				</div>
+				<p className="briefing__lead">
+					CombineControl (CC) is a Garry&rsquo;s Mod gamemode built on the Half-Life 2
+					universe. There&rsquo;s no single objective and no round timer, just a city under
+					Combine occupation and whatever role you decide to play in it. Most people play
+					civilians just trying to get by, though plenty sign up as Civil Protection or
+					Overwatch instead, enforcing the very occupation everyone else lives under. With
+					enough credits, you can also license a shop and build something of your own.
+					It&rsquo;s been running in different forms across community-hosted servers for
+					roughly a decade, and Re:CC is our attempt at doing it properly.
+				</p>
 			</section>
 
 			<section className="roles">
