@@ -1,4 +1,5 @@
 // src/react-app/components/Nav.tsx
+import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { DISCORD_URL } from "../constants";
 import { Wordmark } from "./Logo";
@@ -17,13 +18,13 @@ export function Nav() {
 	return (
 		<header className={`nav ${scrolled ? "nav--scrolled" : ""}`}>
 			<div className="nav__inner">
-				<a href="/#top" className="nav__brand">
+				<Link to="/#top" className="nav__brand">
 					<Wordmark className="nav__wordmark" />
-				</a>
+				</Link>
 				<nav className="nav__links" aria-label="Primary">
-					<a href="/#origin">Origin</a>
-					<a href="/#directives">Directives</a>
-					<a href="/#status">Status</a>
+					<Link to="/#origin">Origin</Link>
+					<Link to="/#directives">Directives</Link>
+					<Link to="/#status">Status</Link>
 				</nav>
 				<a
 					className="btn btn--primary btn--small nav__cta"

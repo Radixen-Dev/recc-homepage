@@ -6,11 +6,13 @@ import { CookieConsent } from "./components/CookieConsent";
 import { Home } from "./pages/Home";
 import { Privacy } from "./pages/Privacy";
 import { Terms } from "./pages/Terms";
+import { ScrollToTop } from "./components/ScrollToTop";
 import "./App.css";
 
 function App() {
 	return (
 		<>
+			<ScrollToTop />
 			<Nav />
 			<main>
 				<Routes>
