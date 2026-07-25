@@ -24,7 +24,8 @@ export function Hero() {
 				</p>
 
 				<p className="hero__orient">
-					New to CombineControl? <Link to="/what-is-cc">See what it actually is &rarr;</Link>
+					New to CombineControl?{" "}
+					<Link to="/what-is-cc">See what it is, and why we&rsquo;re rebuilding it &rarr;</Link>
 				</p>
 
 				<div className="hero__actions">

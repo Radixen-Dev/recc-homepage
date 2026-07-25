@@ -25,7 +25,7 @@ export function Nav() {
 					<Link to="/#origin">Origin</Link>
 					<Link to="/#directives">Directives</Link>
 					<Link to="/#status">Status</Link>
-					<Link to="/what-is-cc">What is CC?</Link>
+					<Link to="/what-is-cc">What &amp; Why</Link>
 				</nav>
 				<a
 					className="btn btn--primary btn--small nav__cta"

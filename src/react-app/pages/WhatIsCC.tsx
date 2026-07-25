@@ -58,11 +58,11 @@ export function WhatIsCC() {
 			<section className="briefing">
 				<div className="section-head">
 					<span className="tag">Briefing</span>
-					<h1>What is CombineControl?</h1>
+					<h1>What is CombineControl &mdash; and Why Re:CC?</h1>
 					<p className="section-head__sub">
 						CombineControl drops you into a Half-Life 2 city under Combine occupation, and
-						lets you decide who you are in it. Here&rsquo;s the rundown, no prior experience
-						required.
+						lets you decide who you are in it. Here&rsquo;s the rundown, and what we&rsquo;re
+						changing, no prior experience required.
 					</p>
 				</div>
 

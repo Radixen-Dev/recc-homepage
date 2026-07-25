@@ -11,7 +11,7 @@ const FEATURES: {
 	{
 		tag: "N.01",
 		title: "Cross-server travel",
-		body: "It's back. Move between our servers without losing your progress. No separate accounts, no starting over.",
+		body: "It's back. Move between our servers without losing your progress. No separate accounts, no starting over. If the community wants it, different servers can even run at different levels of seriousness, from full roleplay to shoot-on-sight.",
 	},
 	{
 		tag: "N.02",
@@ -36,7 +36,7 @@ const FEATURES: {
 	{
 		tag: "N.06",
 		title: "Play it your way",
-		body: "Combat doesn't have to run through /me and /roll anymore, we're building in real-time combat and optional voice chat. If the community wants it, different servers can run at different levels of seriousness, from full roleplay to shoot-on-sight.",
+		body: "Combat doesn't have to run through /me and /roll anymore. We're building in real-time combat, with optional voice chat for when you'd rather just talk.",
 	},
 	{
 		tag: "N.07",
