@@ -86,7 +86,6 @@ import os
 W, H, TITLE, OUT, FONT_FILE = int(sys.argv[1]), int(sys.argv[2]), sys.argv[3], sys.argv[4], sys.argv[5]
 
 # Layout is defined as fractions of W/H, tuned at the 1920x480 baseline.
-logo_x = W * 0.025
 logo_y = H * 0.2167
 logo_font = H * 0.10
 logo_stroke = H * 0.00375
@@ -151,7 +150,7 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{
 	<polygon points="{margin_x},{margin_y} {margin_x + tri_x},{margin_y} {margin_x},{margin_y + tri_y}" fill="#e2231c" />
 	<polygon points="{W - margin_x},{H - margin_y} {W - margin_x - tri_x},{H - margin_y} {W - margin_x},{H - margin_y - tri_y}" fill="#e2231c" />
 
-	<text x="{logo_x}" y="{logo_y}" font-family="Aldrich" font-size="{logo_font:.2f}" letter-spacing="{logo_spacing:.2f}">
+	<text x="{W / 2:.2f}" y="{logo_y:.2f}" text-anchor="middle" font-family="Aldrich" font-size="{logo_font:.2f}" letter-spacing="{logo_spacing:.2f}">
 		<tspan fill="#e2231c">RE:</tspan><tspan fill="none" stroke="#eae7e0" stroke-width="{logo_stroke:.2f}" paint-order="stroke fill"> COMBINE</tspan><tspan fill="#e2231c"> CONTROL</tspan>
 	</text>
 
