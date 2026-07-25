@@ -1,18 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 320" width="1600" height="320" role="img" aria-labelledby="rcc-header-title">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 360" width="1600" height="360" role="img" aria-labelledby="rcc-header-title">
 	<title id="rcc-header-title">Re:CombineControl section header</title>
 
 	<!--
 		Re:CombineControl — wide section-header template
 
-		Reusable divider banner for documents. The Re:CombineControl wordmark
-		(top-left) is fixed brand asset — leave it as-is. To reuse this header
-		for a new section, edit only the text content of the <text
-		id="section-title"> element below (currently "SECTION TITLE").
+		Reusable, transparent-background divider banner for documents.
+		The Re:CombineControl wordmark (top-left) is a fixed brand asset —
+		leave it as-is. To reuse this header for a new section, edit only
+		the text content of the <text id="section-title"> element below
+		(currently "SECTION TITLE").
+
+		Background is intentionally transparent — designed to sit on a
+		dark surface (Discord dark theme, dark document background, etc).
+		Text uses light ink (#eae7e0), so it will be unreadable dropped
+		onto a light/white background.
 
 		The Aldrich display font is embedded as base64 so this file renders
 		identically anywhere SVG is supported, with no external font
 		dependency. Keep replacement titles to roughly 20 characters or
-		fewer at font-size 96 so they stay inside the frame; for longer
+		fewer at font-size 150 so they stay inside the frame; for longer
 		titles, lower the font-size attribute on that element.
 	-->
 
@@ -26,24 +32,6 @@
 			}
 		</style>
 
-		<linearGradient id="rcc-bg" x1="0" y1="0" x2="1600" y2="320" gradientUnits="userSpaceOnUse">
-			<stop offset="0" stop-color="#0a0b0c" />
-			<stop offset="1" stop-color="#101314" />
-		</linearGradient>
-
-		<pattern id="rcc-grid" width="32" height="32" patternUnits="userSpaceOnUse">
-			<path d="M 32 0 L 0 0 0 32" fill="none" stroke="#eae7e0" stroke-opacity="0.06" stroke-width="1" />
-		</pattern>
-
-		<radialGradient id="rcc-grid-fade" cx="50%" cy="30%" r="75%">
-			<stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
-			<stop offset="60%" stop-color="#ffffff" stop-opacity="0.5" />
-			<stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
-		</radialGradient>
-		<mask id="rcc-grid-mask">
-			<rect width="1600" height="320" fill="url(#rcc-grid-fade)" />
-		</mask>
-
 		<linearGradient id="rcc-rule" x1="0" y1="0" x2="1" y2="0">
 			<stop offset="0" stop-color="#e2231c" stop-opacity="0" />
 			<stop offset="0.5" stop-color="#e2231c" stop-opacity="1" />
@@ -51,24 +39,20 @@
 		</linearGradient>
 	</defs>
 
-	<!-- background -->
-	<rect width="1600" height="320" fill="url(#rcc-bg)" />
-	<rect width="1600" height="320" fill="url(#rcc-grid)" mask="url(#rcc-grid-mask)" />
-
 	<!-- angular corner frame, echoing the site's clipped-corner motif -->
-	<polyline points="24,64 24,24 64,24" fill="none" stroke="#454b4e" stroke-width="1.5" />
-	<polyline points="1576,256 1576,296 1536,296" fill="none" stroke="#454b4e" stroke-width="1.5" />
-	<polygon points="24,24 46,24 24,46" fill="#e2231c" />
-	<polygon points="1576,296 1554,296 1576,274" fill="#e2231c" />
+	<polyline points="32,88 32,32 88,32" fill="none" stroke="#454b4e" stroke-width="2" />
+	<polyline points="1568,272 1568,328 1512,328" fill="none" stroke="#454b4e" stroke-width="2" />
+	<polygon points="32,32 60,32 32,60" fill="#e2231c" />
+	<polygon points="1568,328 1540,328 1568,300" fill="#e2231c" />
 
 	<!-- Re:CombineControl wordmark (brand-fixed, do not restyle) -->
-	<text x="56" y="66" font-family="Aldrich, sans-serif" font-size="26" letter-spacing="0.5">
-		<tspan fill="#e2231c">RE:</tspan><tspan fill="none" stroke="#eae7e0" stroke-width="1" paint-order="stroke fill"> COMBINE</tspan><tspan fill="#e2231c"> CONTROL</tspan>
+	<text x="64" y="98" font-family="Aldrich, sans-serif" font-size="46" letter-spacing="0.5">
+		<tspan fill="#e2231c">RE:</tspan><tspan fill="none" stroke="#eae7e0" stroke-width="1.8" paint-order="stroke fill"> COMBINE</tspan><tspan fill="#e2231c"> CONTROL</tspan>
 	</text>
 
 	<!-- section title (edit this text for reuse) -->
-	<text id="section-title" x="800" y="200" text-anchor="middle" font-family="Aldrich, sans-serif" font-size="96" letter-spacing="3" fill="#eae7e0">SECTION TITLE</text>
+	<text id="section-title" x="800" y="252" text-anchor="middle" font-family="Aldrich, sans-serif" font-size="150" letter-spacing="4" fill="#eae7e0">SECTION TITLE</text>
 
 	<!-- accent rule -->
-	<rect x="480" y="232" width="640" height="2" fill="url(#rcc-rule)" />
+	<rect x="470" y="290" width="660" height="3" fill="url(#rcc-rule)" />
 </svg>
