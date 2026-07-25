@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { DISCORD_URL } from "../constants";
 import { Wordmark } from "./Logo";
-import { DiscordIcon } from "./icons";
+import { ArrowIcon, DiscordIcon } from "./icons";
 
 export function Nav() {
 	const [scrolled, setScrolled] = useState(false);
@@ -25,6 +25,10 @@ export function Nav() {
 					<Link to="/#origin">Origin</Link>
 					<Link to="/#directives">Directives</Link>
 					<Link to="/#status">Status</Link>
+					<Link to="/what-is-cc" className="nav__link--page">
+						What &amp; Why
+						<ArrowIcon className="nav__link--page-icon" />
+					</Link>
 				</nav>
 				<a
 					className="btn btn--primary btn--small nav__cta"

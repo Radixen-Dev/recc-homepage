@@ -35,6 +35,11 @@ const FEATURES: {
 	},
 	{
 		tag: "N.06",
+		title: "Play it your way",
+		body: "We're building in real-time combat, optional voice chat, and room for servers to run at different seriousness levels.",
+	},
+	{
+		tag: "N.07",
 		title: "More, classified",
 		body: "There's more we're not ready to talk about yet. If you want it early, Discord is where it'll show up first.",
 		locked: true,
