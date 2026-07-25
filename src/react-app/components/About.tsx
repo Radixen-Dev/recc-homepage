@@ -11,11 +11,11 @@ export function About() {
 			<div className="about__grid">
 				<p className="about__lead">
 					Re:CombineControl is a full overhaul of CombineControl, the Half-Life 2 city-roleplay
-					gamemode built around life under Combine occupation, not just a reskin. We&rsquo;ve
-					hosted CC servers before and watched plenty of others come and go over roughly the
-					last decade, each running its own fork with its own standout features that never made
-					it anywhere else. This rebuild is what happens when you take all of that and actually
-					bring it together instead of leaving it scattered.
+					gamemode built around life under Combine occupation. Not a reskin. We&rsquo;ve hosted
+					CC servers before and watched plenty of others come and go over roughly the last
+					decade, each one running its own fork with its own standout features that never made
+					it anywhere else. This rebuild pulls all of that together instead of leaving it
+					scattered across a dozen servers.
 				</p>
 				<div className="about__facts">
 					<div className="fact">

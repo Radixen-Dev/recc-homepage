@@ -29,7 +29,7 @@ const ROLES: { title: string; clearance: string; body: string }[] = [
 	{
 		title: "Business owner",
 		clearance: "Licensed",
-		body: "Pay for a license, open a shop, and build something in the city that's actually yours.",
+		body: "Pay for a license, open a shop, and build something in the city that's yours.",
 	},
 ];
 
@@ -44,7 +44,7 @@ const COMPARISONS: { before: string; after: string }[] = [
 	},
 	{
 		before: "Persistence that never quite held",
-		after: "Persistence built to actually last",
+		after: "Persistence built to last",
 	},
 	{
 		before: "Nothing to do once the roleplay dies down",
@@ -58,21 +58,22 @@ export function WhatIsCC() {
 			<section className="briefing">
 				<div className="section-head">
 					<span className="tag">Briefing</span>
-					<h1>What is CombineControl &mdash; and Why Re:CC?</h1>
+					<h1>What is CombineControl (and Why Re:CC)?</h1>
 					<p className="section-head__sub">
 						CombineControl drops you into a Half-Life 2 city under Combine occupation, and
-						lets you decide who you are in it. Here&rsquo;s the rundown, and what we&rsquo;re
-						changing, no prior experience required.
+						lets you decide who you are in it. Here&rsquo;s the rundown, plus what we&rsquo;re
+						changing. No experience required.
 					</p>
 				</div>
 
 				<div className="briefing__grid">
 					<p className="briefing__lead">
 						CombineControl (CC) is a Garry&rsquo;s Mod gamemode built on the Half-Life 2
-						universe. There&rsquo;s no single objective and no round timer, just a city, a
-						Combine occupation running it, and whatever role you decide to play inside that.
-						Civilians get by, Civil Protection enforces order, Overwatch answers to no one,
-						and anyone with the coin can open a shop and build something of their own.
+						universe. There&rsquo;s no single objective and no round timer, just a city under
+						Combine occupation and whatever role you decide to play in it. Most people play
+						civilians just trying to get by, though plenty sign up as Civil Protection or
+						Overwatch instead, enforcing the very occupation everyone else lives under. With
+						enough credits, you can also license a shop and build something of your own.
 						It&rsquo;s been running in different forms across community-hosted servers for
 						roughly a decade, and Re:CC is our attempt at doing it properly.
 					</p>
@@ -113,14 +114,14 @@ export function WhatIsCC() {
 
 			<section className="playbook">
 				<div className="section-head">
-					<span className="tag">How It Actually Plays</span>
+					<span className="tag">How It Plays</span>
 					<h2>No rounds, no script</h2>
 				</div>
 
 				<p className="playbook__intro">
 					There&rsquo;s no match structure. Servers just run, and the story of the city gets
-					written by whoever&rsquo;s logged in. Historically, that&rsquo;s happened through
-					chat, regular conversation plus a handful of commands:
+					written by whoever&rsquo;s logged in. Historically, most of that&rsquo;s played out
+					in chat: ordinary back-and-forth conversation, plus a handful of commands.
 				</p>
 
 				<div className="chatlog">
@@ -134,7 +135,7 @@ export function WhatIsCC() {
 					</div>
 					<div className="chatlog__line">
 						<span className="chatlog__cmd">/it</span>
-						<span className="chatlog__it"> the crate creaks &mdash; empty, except for a stack of old newspaper.</span>
+						<span className="chatlog__it"> the crate creaks open, revealing nothing but a stack of old newspaper.</span>
 					</div>
 					<div className="chatlog__line">
 						<span className="chatlog__cmd">/roll</span>
@@ -149,14 +150,14 @@ export function WhatIsCC() {
 
 				<div className="playbook__body">
 					<p>
-						Admins aren&rsquo;t just moderators here, either. They shape the world directly:
-						triggering events, roleplaying as characters passing through, and spawning NPCs
-						to push the city&rsquo;s story forward in ways no round timer could.
+						Admins aren&rsquo;t just moderators here. They trigger events, roleplay as
+						characters passing through, and spawn NPCs when the story needs a push a round
+						timer could never give it.
 					</p>
 					<p>
-						The honest version: CC has always been at its best when people are actively
-						playing off each other, and quiet when they&rsquo;re not. That gap is exactly
-						what we&rsquo;re building Re:CC to close.
+						CC has always been at its best when people are playing off each other, and pretty
+						dead when they&rsquo;re not. That&rsquo;s the gap we&rsquo;re building Re:CC to
+						close.
 					</p>
 				</div>
 			</section>
@@ -191,9 +192,9 @@ export function WhatIsCC() {
 				</div>
 
 				<p className="requirements__body">
-					CombineControl runs on Garry&rsquo;s Mod, you&rsquo;ll need to own it on Steam to
-					play. There&rsquo;s no server live yet; development is ongoing, and everything
-					else, testing, access, launch, gets announced on{" "}
+					CombineControl runs on Garry&rsquo;s Mod, so you&rsquo;ll need to own it on Steam to
+					play. There&rsquo;s no server live yet. Development is ongoing, and any updates on
+					testing, access, or launch will show up on{" "}
 					<a href={DISCORD_URL} target="_blank" rel="noreferrer noopener">
 						Discord
 					</a>{" "}
