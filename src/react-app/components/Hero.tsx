@@ -14,14 +14,14 @@ export function Hero() {
 				</h1>
 
 				<p className="hero__lede">
-					The Garry&rsquo;s Mod gamemode that shaped a generation of Half&#8209;Life&nbsp;2
-					roleplay servers is getting rebuilt from the ground up.
+					The Garry&rsquo;s Mod gamemode that shaped a generation of Half-Life 2 roleplay
+					servers is getting rebuilt from scratch.
 				</p>
 
 				<p className="hero__body">
-					We&rsquo;ve spent years running and playing on Combine Control servers. Re:CC takes
-					everything that history taught us — the good, the broken, and the never&#8209;quite&#8209;fixed
-					— and puts it into a version worth building on.
+					We used to run Combine Control servers ourselves, back when the format was at its
+					peak. This is us finally doing something about all the stuff we complained about
+					back then.
 				</p>
 
 				<div className="hero__actions">
@@ -41,7 +41,7 @@ export function Hero() {
 				</div>
 
 				<p className="hero__note">
-					No release date yet — word on servers, features, and testing travels through
+					No release date yet. Updates on servers, features, and testing show up in
 					Discord first.
 				</p>
 			</div>

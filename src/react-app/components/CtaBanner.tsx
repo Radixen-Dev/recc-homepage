@@ -8,8 +8,8 @@ export function CtaBanner() {
 			<div className="cta__panel">
 				<h2>Follow the signal</h2>
 				<p>
-					Progress updates, early previews, and eventually — servers to join. It all starts
-					on Discord.
+					Progress updates, early previews, and eventually, servers to join. It all shows up
+					on Discord first.
 				</p>
 				<a
 					className="btn btn--primary btn--large"

@@ -1,4 +1,4 @@
-# Re:CombineControl — Homepage
+# Re:CombineControl Homepage
 
 The landing page for **Re:CombineControl (Re:CC)**, a ground-up overhaul and
 expansion of the CombineControl Garry's Mod gamemode.
@@ -7,9 +7,9 @@ Built with React, Vite, Hono, and deployed on Cloudflare Workers.
 
 <!-- dash-content-start -->
 
-The site is a single-page landing site: a hero introduction, background on the
-project, a teaser of upcoming changes, current development status, and a call
-to action to join the Discord server.
+It's a single-page site: hero intro, background on the project, a teaser of
+upcoming changes, current development status, and a call to action to join
+the Discord server.
 
 <!-- dash-content-end -->
 

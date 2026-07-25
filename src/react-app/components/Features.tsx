@@ -11,23 +11,23 @@ const FEATURES: {
 	{
 		tag: "N.01",
 		title: "Cross-server travel",
-		body: "Move between our servers without losing your progress. One connected network, not a handful of silos.",
+		body: "Move between our servers without losing your progress. No separate accounts, no starting over.",
 		badge: "Confirmed",
 	},
 	{
 		tag: "N.02",
 		title: "Rebuilt foundations",
-		body: "The codebase is being rewritten from the inside out, for stability and performance the original was never built to handle.",
+		body: "The codebase is getting rewritten from the inside out, for stability and performance the original was never built to handle.",
 	},
 	{
 		tag: "N.03",
 		title: "Balance, reconsidered",
-		body: "Years of watching what breaks a CC server have gone into rethinking how factions, objectives, and progression play off each other.",
+		body: "We've spent years watching what breaks a CC server, and it's shaping how factions, objectives, and progression fit together this time.",
 	},
 	{
 		tag: "N.04",
 		title: "Hardened & accountable",
-		body: "Stronger exploit protection and better admin tooling, built with security in mind from day one — a requirement before anything goes public.",
+		body: "Stronger exploit protection and better admin tooling. Security needs to be solid before any of this goes public, there's no way around that.",
 	},
 	{
 		tag: "N.05",
@@ -37,7 +37,7 @@ const FEATURES: {
 	{
 		tag: "N.06",
 		title: "More, classified",
-		body: "Some of what we're building is staying under wraps for now. Early details surface in Discord before anywhere else.",
+		body: "There's more we're not ready to talk about yet. If you want it early, Discord is where it'll show up first.",
 		locked: true,
 	},
 ];
@@ -49,7 +49,7 @@ export function Features() {
 				<span className="tag">01 / Directives</span>
 				<h2>What&rsquo;s changing</h2>
 				<p className="section-head__sub">
-					We&rsquo;re staying quiet on the finer details for now — but here&rsquo;s the shape
+					We&rsquo;re staying quiet on the finer details for now, but here&rsquo;s a rough idea
 					of what&rsquo;s coming.
 				</p>
 			</div>
