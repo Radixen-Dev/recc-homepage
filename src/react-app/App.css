@@ -822,6 +822,15 @@ section {
 	margin-bottom: 1rem;
 }
 
+.chatlog__name {
+	color: var(--ink);
+	font-weight: 600;
+}
+
+.chatlog__chat {
+	color: var(--ink-dim);
+}
+
 .chatlog__me {
 	color: var(--ink);
 }

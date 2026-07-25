@@ -120,10 +120,14 @@ export function WhatIsCC() {
 				<p className="playbook__intro">
 					There&rsquo;s no match structure. Servers just run, and the story of the city gets
 					written by whoever&rsquo;s logged in. Historically, that&rsquo;s happened through
-					chat:
+					chat, regular conversation plus a handful of commands:
 				</p>
 
 				<div className="chatlog">
+					<div className="chatlog__line">
+						<span className="chatlog__name">Kessler:</span>
+						<span className="chatlog__chat"> I&rsquo;m going to kick this crate open.</span>
+					</div>
 					<div className="chatlog__line">
 						<span className="chatlog__cmd">/me</span>
 						<span className="chatlog__me"> kicks the crate open, checking what&rsquo;s inside.</span>
@@ -138,9 +142,9 @@ export function WhatIsCC() {
 					</div>
 				</div>
 				<p className="playbook__caption">
-					<strong>/me</strong> is what your character does. <strong>/it</strong> is what&rsquo;s
-					happening around them, no name attached, just the scene. <strong>/roll</strong>{" "}
-					settles anything left to chance.
+					Regular chat is just talking in character. <strong>/me</strong> is what your
+					character does. <strong>/it</strong> is what&rsquo;s happening around them, no name
+					attached, just the scene. <strong>/roll</strong> settles anything left to chance.
 				</p>
 
 				<div className="playbook__body">
