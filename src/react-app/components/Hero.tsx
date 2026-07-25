@@ -14,8 +14,7 @@ export function Hero() {
 				</h1>
 
 				<p className="hero__lede">
-					The Garry&rsquo;s Mod gamemode that shaped a generation of Half-Life 2 roleplay
-					servers is getting rebuilt from scratch.
+					The gamemode a generation of HL2 servers grew up on is getting rebuilt.
 				</p>
 
 				<p className="hero__body">
