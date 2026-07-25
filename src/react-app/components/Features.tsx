@@ -36,7 +36,7 @@ const FEATURES: {
 	{
 		tag: "N.06",
 		title: "Play it your way",
-		body: "Combat doesn't have to run through /me and /roll anymore. We're building in real-time combat, optional voice chat, and room for servers to run at different seriousness levels.",
+		body: "We're building in real-time combat, optional voice chat, and room for servers to run at different seriousness levels.",
 	},
 	{
 		tag: "N.07",
