@@ -7,12 +7,18 @@ app.get("/api/health", (c) => c.json({ status: "ok" }));
 // Worker, injects the Microsoft Clarity loader into the document <head>.
 // This keeps the tracking ID out of the source tree entirely; it only ever
 // exists as a runtime binding set via `wrangler secret put CLARITY_PROJECT_ID`.
+// Clarity runs by default; the loader is skipped entirely if the visitor has
+// opted out (via the "cc_analytics=denied" cookie set by the cookie banner).
+const CONSENT_COOKIE = "cc_analytics"; // must match CLARITY_CONSENT_COOKIE in src/react-app/constants.ts
+
 app.get("*", async (c) => {
 	const assetResponse = await c.env.ASSETS.fetch(c.req.raw);
 
 	const projectId = c.env.CLARITY_PROJECT_ID;
 	const contentType = assetResponse.headers.get("content-type") ?? "";
-	if (!projectId || !contentType.includes("text/html")) {
+	const cookieHeader = c.req.header("cookie") ?? "";
+	const optedOut = new RegExp(`(?:^|;\\s*)${CONSENT_COOKIE}=denied`).test(cookieHeader);
+	if (!projectId || !contentType.includes("text/html") || optedOut) {
 		return assetResponse;
 	}
 
