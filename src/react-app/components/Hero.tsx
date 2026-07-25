@@ -1,4 +1,5 @@
 // src/react-app/components/Hero.tsx
+import { Link } from "react-router-dom";
 import { DISCORD_URL } from "../constants";
 import { DiscordIcon, ArrowIcon } from "./icons";
 
@@ -20,6 +21,10 @@ export function Hero() {
 				<p className="hero__body">
 					A ground-up rebuild aimed at fixing what's been broken for years and finally
 					moving the format forward.
+				</p>
+
+				<p className="hero__orient">
+					New to CombineControl? <Link to="/what-is-cc">See what it actually is &rarr;</Link>
 				</p>
 
 				<div className="hero__actions">

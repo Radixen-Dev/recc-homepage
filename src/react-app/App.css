@@ -304,6 +304,18 @@ section {
 	color: var(--ink-faint);
 }
 
+.hero__orient {
+	font-size: 0.95rem;
+	color: var(--ink-dim);
+	margin-bottom: 2rem;
+}
+
+.hero__orient a {
+	color: var(--red-strong);
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
 /* ---------- About ---------- */
 
 .about__grid {
@@ -639,6 +651,35 @@ section {
 
 .legal__back {
 	margin-top: 3rem;
+}
+
+/* ---------- What Is CC (explainer page) ---------- */
+
+.explainer-intro {
+	padding-top: 9rem;
+}
+
+.prose {
+	max-width: 42rem;
+	color: var(--ink-dim);
+	font-size: 1.05rem;
+	line-height: 1.75;
+}
+
+.prose p + p {
+	margin-top: 1.25rem;
+}
+
+.prose strong {
+	color: var(--ink);
+}
+
+.prose a {
+	color: var(--red-strong);
+}
+
+.prose a:hover {
+	text-decoration: underline;
 }
 
 /* ---------- Cookie consent banner ---------- */
