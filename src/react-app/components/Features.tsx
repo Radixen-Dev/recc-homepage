@@ -11,8 +11,7 @@ const FEATURES: {
 	{
 		tag: "N.01",
 		title: "Cross-server travel",
-		body: "Move between our servers without losing your progress. No separate accounts, no starting over.",
-		badge: "Confirmed",
+		body: "It's back. Move between our servers without losing your progress. No separate accounts, no starting over.",
 	},
 	{
 		tag: "N.02",
