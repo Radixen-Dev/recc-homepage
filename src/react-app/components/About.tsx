@@ -10,10 +10,10 @@ export function About() {
 
 			<div className="about__grid">
 				<p className="about__lead">
-					Re:CombineControl is a full overhaul of CombineControl, not just a reskin. We used
-					to run Combine Control servers ourselves, and we&rsquo;ve watched plenty of others
-					come and go over roughly the last decade. This rebuild is what happens when you
-					take all of that and actually fix it instead of just talking about it.
+					Re:CombineControl is a full overhaul of CombineControl, not just a reskin. We&rsquo;ve
+					hosted CC servers before and watched plenty of others come and go over roughly the
+					last decade. This rebuild is what happens when you take all of that and actually fix
+					it instead of just talking about it.
 				</p>
 				<div className="about__facts">
 					<div className="fact">
@@ -22,7 +22,7 @@ export function About() {
 					</div>
 					<div className="fact">
 						<span className="fact__value">1 team</span>
-						<span className="fact__label">that&rsquo;s actually run CC servers</span>
+						<span className="fact__label">that&rsquo;s hosted CC servers before</span>
 					</div>
 					<div className="fact">
 						<span className="fact__value">0</span>

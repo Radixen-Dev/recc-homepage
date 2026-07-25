@@ -18,9 +18,8 @@ export function Hero() {
 				</p>
 
 				<p className="hero__body">
-					We used to run Combine Control servers ourselves, back when the format was at its
-					peak. This is us finally doing something about all the stuff we complained about
-					back then.
+					A ground-up rebuild aimed at fixing what's been broken for years and finally
+					moving the format forward.
 				</p>
 
 				<div className="hero__actions">
