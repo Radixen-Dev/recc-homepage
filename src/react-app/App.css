@@ -191,6 +191,7 @@ section {
 
 .nav__links {
 	display: flex;
+	align-items: center;
 	gap: 1.75rem;
 	font-family: var(--font-head);
 	font-weight: 600;
@@ -205,6 +206,32 @@ section {
 
 .nav__links a:hover {
 	color: var(--ink);
+}
+
+.nav__links a.nav__link--page {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	color: var(--ink);
+	border: 1px solid var(--border-strong);
+	padding: 0.3rem 0.7rem;
+	font-size: 0.8rem;
+	transition:
+		border-color 0.15s ease,
+		color 0.15s ease;
+}
+
+.nav__links a.nav__link--page:hover {
+	border-color: var(--red);
+	color: var(--red-strong);
+}
+
+.nav__link--page-icon {
+	width: 0.65rem;
+	height: 0.65rem;
+	color: var(--red);
+	flex-shrink: 0;
+	transform: rotate(-45deg);
 }
 
 @media (max-width: 700px) {
