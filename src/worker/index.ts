@@ -7,6 +7,9 @@ app.get("/api/health", (c) => c.json({ status: "ok" }));
 // Worker, injects the Microsoft Clarity loader into the document <head>.
 // This keeps the tracking ID out of the source tree entirely; it only ever
 // exists as a runtime binding set via `wrangler secret put CLARITY_PROJECT_ID`.
+// The loader only actually starts Clarity if the visitor already consented
+// (via the "cc_analytics" cookie set by the cookie banner); otherwise it just
+// exposes `window.__clarityInit()` for the banner to call on Accept.
 app.get("*", async (c) => {
 	const assetResponse = await c.env.ASSETS.fetch(c.req.raw);
 
@@ -27,7 +30,9 @@ app.get("*", async (c) => {
 
 function clarityLoaderScript(projectId: string) {
 	const safeId = projectId.replace(/[^a-zA-Z0-9]/g, "");
-	return `<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","${safeId}");</script>`;
+	// Cookie name must match CLARITY_CONSENT_COOKIE in src/react-app/constants.ts.
+	const consentCookie = "cc_analytics";
+	return `<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};function init(){t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);}c.__clarityInit=init;try{if(new RegExp("(?:^|; )${consentCookie}=granted").test(l.cookie)){init();}}catch(e){}})(window,document,"clarity","script","${safeId}");</script>`;
 }
 
 export default app;

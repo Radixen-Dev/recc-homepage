@@ -17,13 +17,13 @@ export function Nav() {
 	return (
 		<header className={`nav ${scrolled ? "nav--scrolled" : ""}`}>
 			<div className="nav__inner">
-				<a href="#top" className="nav__brand">
+				<a href="/#top" className="nav__brand">
 					<Wordmark className="nav__wordmark" />
 				</a>
 				<nav className="nav__links" aria-label="Primary">
-					<a href="#origin">Origin</a>
-					<a href="#directives">Directives</a>
-					<a href="#status">Status</a>
+					<a href="/#origin">Origin</a>
+					<a href="/#directives">Directives</a>
+					<a href="/#status">Status</a>
 				</nav>
 				<a
 					className="btn btn--primary btn--small nav__cta"

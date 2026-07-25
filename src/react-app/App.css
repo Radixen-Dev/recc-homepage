@@ -575,3 +575,116 @@ section {
 	line-height: 1.6;
 	max-width: 46rem;
 }
+
+.footer__legal {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 1.25rem;
+	margin-top: 1.5rem;
+}
+
+.footer__legal-link {
+	font-family: var(--font-head);
+	font-weight: 600;
+	font-size: 0.85rem;
+	color: var(--ink-dim);
+	transition: color 0.15s ease;
+}
+
+.footer__legal-link:hover {
+	color: var(--ink);
+}
+
+/* ---------- Legal pages (Privacy / Terms) ---------- */
+
+.legal {
+	padding-top: 9rem;
+}
+
+.legal__body {
+	max-width: 42rem;
+	color: var(--ink-dim);
+	font-size: 1rem;
+	line-height: 1.75;
+}
+
+.legal__body h2 {
+	color: var(--ink);
+	font-size: 1.3rem;
+	margin-top: 2.5rem;
+	margin-bottom: 0.75rem;
+}
+
+.legal__body p,
+.legal__body ul {
+	margin: 0 0 1rem;
+}
+
+.legal__body ul {
+	padding-left: 1.25rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.legal__body a {
+	color: var(--red-strong);
+}
+
+.legal__body a:hover {
+	text-decoration: underline;
+}
+
+.legal__back {
+	margin-top: 3rem;
+}
+
+/* ---------- Cookie consent banner ---------- */
+
+.cookie-banner {
+	position: fixed;
+	left: 1.5rem;
+	right: 1.5rem;
+	bottom: 1.5rem;
+	z-index: 60;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 1rem;
+	max-width: 60rem;
+	margin: 0 auto;
+	padding: 1.25rem 1.5rem;
+	background: rgba(20, 23, 26, 0.95);
+	backdrop-filter: blur(10px);
+	border: 1px solid var(--border-strong);
+}
+
+.cookie-banner__text {
+	flex: 1 1 24rem;
+	color: var(--ink-dim);
+	font-size: 0.9rem;
+	line-height: 1.6;
+	margin: 0;
+}
+
+.cookie-banner__text a {
+	color: var(--red-strong);
+}
+
+.cookie-banner__actions {
+	display: flex;
+	gap: 0.75rem;
+	flex-shrink: 0;
+}
+
+@media (max-width: 700px) {
+	.cookie-banner {
+		left: 1rem;
+		right: 1rem;
+		bottom: 1rem;
+		padding: 1rem;
+	}
+}
+

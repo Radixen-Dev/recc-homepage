@@ -1,4 +1,5 @@
 // src/react-app/components/Footer.tsx
+import { Link } from "react-router-dom";
 import { DISCORD_URL } from "../constants";
 import { DiscordIcon } from "./icons";
 
@@ -26,6 +27,14 @@ export function Footer() {
 				Facepunch Studios, or Disseminate. Source will be released publicly once the project
 				is stable and secure.
 			</p>
+			<div className="footer__legal">
+				<Link className="btn btn--ghost btn--small" to="/privacy">
+					Privacy Policy
+				</Link>
+				<Link className="footer__legal-link" to="/terms">
+					Terms of Service
+				</Link>
+			</div>
 		</footer>
 	);
 }
