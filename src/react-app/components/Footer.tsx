@@ -28,7 +28,7 @@ export function Footer() {
 				is stable and secure.
 			</p>
 			<div className="footer__legal">
-				<Link className="btn btn--ghost btn--small" to="/privacy">
+				<Link className="footer__legal-link" to="/privacy">
 					Privacy Policy
 				</Link>
 				<Link className="footer__legal-link" to="/terms">

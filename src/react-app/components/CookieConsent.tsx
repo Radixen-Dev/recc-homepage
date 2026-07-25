@@ -5,8 +5,8 @@ import { CLARITY_CONSENT_COOKIE } from "../constants";
 
 declare global {
 	interface Window {
-		/** Exposed by the Clarity loader injected in src/worker/index.ts. */
-		__clarityInit?: () => void;
+		/** Present once the Microsoft Clarity loader (src/worker/index.ts) has run. */
+		clarity?: (...args: unknown[]) => void;
 	}
 }
 
@@ -25,30 +25,39 @@ export function CookieConsent() {
 
 	if (!visible) return null;
 
-	const accept = () => {
+	const dismiss = () => {
 		writeConsentCookie("granted");
-		window.__clarityInit?.();
 		setVisible(false);
 	};
 
-	const decline = () => {
+	const optOut = () => {
 		writeConsentCookie("denied");
+		// Stops the current session immediately and erases Clarity's cookies;
+		// the server also skips injecting the loader on future page loads.
+		window.clarity?.("consent", false);
 		setVisible(false);
 	};
 
 	return (
-		<div className="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie consent">
+		<div className="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie notice">
 			<p className="cookie-banner__text">
-				We use Microsoft Clarity to see how visitors use this site (clicks, scrolling, session
-				recordings). It only runs if you accept. See our{" "}
-				<Link to="/privacy">Privacy Policy</Link> for details.
+				This site uses Microsoft Clarity analytics. <Link to="/privacy">Privacy Policy</Link>
 			</p>
 			<div className="cookie-banner__actions">
-				<button type="button" className="btn btn--ghost btn--small" onClick={decline}>
-					Decline
+				<button
+					type="button"
+					className="btn btn--ghost btn--small cookie-banner__optout"
+					onClick={optOut}
+				>
+					Opt out
 				</button>
-				<button type="button" className="btn btn--primary btn--small" onClick={accept}>
-					Accept
+				<button
+					type="button"
+					className="btn btn--primary btn--small cookie-banner__ok"
+					onClick={dismiss}
+					aria-label="Dismiss"
+				>
+					OK
 				</button>
 			</div>
 		</div>

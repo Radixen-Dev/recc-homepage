@@ -67,11 +67,11 @@ export function Privacy() {
 					.
 				</p>
 				<p>
-					When you first visit, a banner lets you accept or decline this analytics tracking.
-					Clarity only loads if you accept. You can change your mind at any time by clearing
-					your cookies for this site, which will show the banner again on your next visit. You
-					can also block cookies entirely through your browser settings, though this may affect
-					how the site behaves.
+					When you first visit, a small banner lets you know this is running and gives you the
+					option to opt out. Opting out stops Clarity for that browser going forward and clears
+					its cookies; you can also opt out later by clearing your cookies for this site (the
+					banner will reappear), or block cookies entirely through your browser settings, though
+					this may affect how the site behaves.
 				</p>
 
 				<h2>How we use information</h2>
@@ -114,8 +114,8 @@ export function Privacy() {
 					the CCPA/CPRA (California) to access, correct, delete, or object to the processing of
 					personal data we hold about you, and to opt out of analytics tracking. Because this
 					site collects very little personal data to begin with, most requests can be satisfied
-					simply by declining the cookie banner or clearing your cookies. For anything else,
-					contact us at{" "}
+					simply by clicking &ldquo;Opt out&rdquo; on the cookie banner or clearing your cookies.
+					For anything else, contact us at{" "}
 					<a href={`mailto:${PRIVACY_CONTACT_EMAIL}`}>{PRIVACY_CONTACT_EMAIL}</a> and we&rsquo;ll
 					do our best to help.
 				</p>
