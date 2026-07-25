@@ -1,6 +1,5 @@
 // src/react-app/components/Footer.tsx
 import { DISCORD_URL } from "../constants";
-import { Mark } from "./Logo";
 import { DiscordIcon } from "./icons";
 
 export function Footer() {
@@ -8,7 +7,6 @@ export function Footer() {
 		<footer className="footer">
 			<div className="footer__inner">
 				<div className="footer__brand">
-					<Mark className="footer__mark" />
 					<span>Re:CombineControl</span>
 				</div>
 

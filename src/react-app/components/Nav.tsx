@@ -1,7 +1,7 @@
 // src/react-app/components/Nav.tsx
 import { useEffect, useState } from "react";
 import { DISCORD_URL } from "../constants";
-import { Mark, Wordmark } from "./Logo";
+import { Wordmark } from "./Logo";
 import { DiscordIcon } from "./icons";
 
 export function Nav() {
@@ -18,7 +18,6 @@ export function Nav() {
 		<header className={`nav ${scrolled ? "nav--scrolled" : ""}`}>
 			<div className="nav__inner">
 				<a href="#top" className="nav__brand">
-					<Mark className="nav__mark" />
 					<Wordmark className="nav__wordmark" />
 				</a>
 				<nav className="nav__links" aria-label="Primary">

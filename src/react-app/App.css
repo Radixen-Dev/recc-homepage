@@ -184,13 +184,6 @@ section {
 	margin-right: auto;
 }
 
-.nav__mark {
-	width: 1.75rem;
-	height: 1.75rem;
-	color: var(--ink);
-	flex-shrink: 0;
-}
-
 .nav__wordmark {
 	font-size: 1rem;
 	letter-spacing: 0.02em;
@@ -251,38 +244,6 @@ section {
 	margin: 0 auto;
 	padding: 0 1.5rem;
 	text-align: center;
-}
-
-.eyebrow {
-	display: inline-flex;
-	align-items: center;
-	gap: 0.55rem;
-	font-family: var(--font-head);
-	font-weight: 600;
-	font-size: 0.8rem;
-	letter-spacing: 0.2em;
-	text-transform: uppercase;
-	color: var(--ink-dim);
-	margin-bottom: 1.75rem;
-}
-
-.eyebrow__dot {
-	width: 7px;
-	height: 7px;
-	border-radius: 50%;
-	background: var(--red);
-	box-shadow: 0 0 0 3px var(--red-dim);
-	animation: pulse 2.4s ease-in-out infinite;
-}
-
-@keyframes pulse {
-	0%,
-	100% {
-		opacity: 1;
-	}
-	50% {
-		opacity: 0.4;
-	}
 }
 
 .hero__title {
@@ -592,12 +553,6 @@ section {
 	font-family: var(--font-head);
 	font-weight: 600;
 	color: var(--ink-dim);
-}
-
-.footer__mark {
-	width: 1.4rem;
-	height: 1.4rem;
-	color: var(--ink-faint);
 }
 
 .footer__discord {

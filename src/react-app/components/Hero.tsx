@@ -7,11 +7,6 @@ export function Hero() {
 		<section id="top" className="hero">
 			<div className="hero__grid" aria-hidden="true" />
 			<div className="hero__inner">
-				<p className="eyebrow">
-					<span className="eyebrow__dot" />
-					In active development
-				</p>
-
 				<h1 className="hero__title">
 					<span className="hero__prefix">Re:</span>
 					<span className="hero__combine">Combine</span>
